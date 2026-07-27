@@ -1,0 +1,7 @@
+title = "Custom Rules"
+
+[[rules]]
+id = "hardcoded-password"
+description = "Detect hardcoded passwords"
+regex = '''(?i)(password|admin_password|passwd|pwd)\s*=\s*["'][^"']{3,}["']'''
+secretGroup = 0
